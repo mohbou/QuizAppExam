@@ -1,9 +1,11 @@
-package com.quizappexam.app.quizappexam;
+package com.quizappexam.app.quizappexam.presentation.features.featureTest.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.quizappexam.app.quizappexam.R;
+
+public class MainActivity extends AppCompatActivity implements MainView{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
