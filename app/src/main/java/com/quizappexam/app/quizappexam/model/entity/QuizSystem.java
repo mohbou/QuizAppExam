@@ -27,7 +27,7 @@ public class QuizSystem {
     }
 
     public Question displayQuestion(int index) {
-        return mTestQuiz.getQuestion(index);
+        return null;
     }
 
 
