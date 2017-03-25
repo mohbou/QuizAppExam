@@ -9,6 +9,15 @@ public class TestQuiz {
     private int mStatus;
     private int currentQuestionIndex= -1;
     private int score;
+    private int passingScore;
+
+    public int getPassingScore() {
+        return passingScore;
+    }
+
+    public void setPassingScore(int passingScore) {
+        this.passingScore = passingScore;
+    }
 
     public List<Question> getQuestions() {
         return mQuestions;
