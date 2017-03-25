@@ -5,7 +5,18 @@ import com.quizappexam.app.quizappexam.model.entity.Question;
 
 import java.util.List;
 
-public class DatabaseImpl implements Database {
+public final class DatabaseImpl implements Database {
+
+private static DatabaseImpl DBInstance;
+
+    private DatabaseImpl() {
+    }
+
+
+    public static DatabaseImpl getDBInstance() {
+       return DatabaseImpl.DBInstance == null ? DatabaseImpl.DBInstance =  new DatabaseImpl(): DatabaseImpl.DBInstance;
+    }
+
     @Override
     public List<Question> loadQuestion() {
         return null;
