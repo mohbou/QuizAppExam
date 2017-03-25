@@ -17,8 +17,7 @@ public class MainActivity extends AppCompatActivity implements MainView{
     @BindView(R.id.testText)
     TextView mTextView;
 
-    @BindView(R.id.btn_ok)
-    Button mButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements MainView{
 
 
     }
+
     @OnClick(R.id.btn_ok)
     public void onSayHelloClicked(View view) {
         mTextView.setText("Clicked");
