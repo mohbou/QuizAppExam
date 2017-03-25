@@ -1,7 +1,7 @@
-package com.quizappexam.app.quizappexam.presentation.features.featureTest.presenter;
+package com.quizappexam.app.quizappexam.presentation.features.featurePlayQuiz.presenter;
 
-import com.quizappexam.app.quizappexam.presentation.features.featureTest.model.BoundaryIntercator;
-import com.quizappexam.app.quizappexam.presentation.features.featureTest.view.MainView;
+import com.quizappexam.app.quizappexam.presentation.features.featurePlayQuiz.model.BoundaryIntercator;
+import com.quizappexam.app.quizappexam.presentation.features.featurePlayQuiz.view.MainView;
 
 public class MainPresenterImpl implements MainPresenter {
 

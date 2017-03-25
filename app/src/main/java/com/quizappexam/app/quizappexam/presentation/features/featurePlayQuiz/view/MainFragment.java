@@ -1,4 +1,4 @@
-package com.quizappexam.app.quizappexam.presentation.features.featureTest.view;
+package com.quizappexam.app.quizappexam.presentation.features.featurePlayQuiz.view;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,19 +6,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-
 import com.quizappexam.app.quizappexam.R;
-
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainFragment extends Fragment {
-
-    @BindView(R.id.testText)
-    TextView mTextView;
-
 
     @Nullable
     @Override
@@ -30,9 +22,8 @@ public class MainFragment extends Fragment {
     }
 
 
-    @OnClick(R.id.btn_ok)
+    @OnClick(R.id.btn_start_test)
     public void onSayHelloClicked(View view) {
-        mTextView.setText("Clicked");
 
     }
 }
