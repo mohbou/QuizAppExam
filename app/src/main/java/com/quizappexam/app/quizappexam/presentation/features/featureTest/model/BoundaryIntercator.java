@@ -1,4 +1,4 @@
 package com.quizappexam.app.quizappexam.presentation.features.featureTest.model;
 
-public class Interactor implements BoundaryIntercator {
+public interface BoundaryIntercator {
 }

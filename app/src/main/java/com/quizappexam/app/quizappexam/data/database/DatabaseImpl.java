@@ -20,4 +20,6 @@ public class DatabaseImpl implements Database {
     public List<Answer> getAnswersNyId(int QuestionId) {
         return null;
     }
+
+
 }

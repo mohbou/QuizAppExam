@@ -6,51 +6,39 @@ public class TestQuiz {
 
 
     private List<Question> mQuestions;
-
     private int mStatus;
-    public final static int TEST_STARTED=0;
-    public final static int TEST_CANCELED=1;
-    public final static int TEST_COMPLETED=2;
-
     private int currentQuestionIndex= -1;
-
-    public Question getQuestion(int index) {
-        return QuestionBank.getBank().getQuestion(index);
-    }
-
-
-    public int getCurrentQuestionIndex() {
-        return currentQuestionIndex;
-    }
-
+    private int score;
 
     public List<Question> getQuestions() {
         return mQuestions;
     }
 
+    public void setQuestions(List<Question> questions) {
+        mQuestions = questions;
+    }
 
     public int getStatus() {
         return mStatus;
     }
 
     public void setStatus(int status) {
-
         mStatus = status;
     }
 
-    public boolean selectAnswer(int pickAnswer,int questionIndex) {
-        if(pickAnswer==getQuestion(questionIndex).getAnswerIndex())
-            return true;
-        return false;
+    public int getCurrentQuestionIndex() {
+        return currentQuestionIndex;
     }
 
-    public void loadQuestions() {
-        mQuestions =QuestionBank.getBank().loadQuestions();
+    public void setCurrentQuestionIndex(int currentQuestionIndex) {
+        this.currentQuestionIndex = currentQuestionIndex;
     }
 
+    public int getScore() {
+        return score;
+    }
 
-    public void pickedAnswer(int answerPicked) {
-        mQuestions.get(currentQuestionIndex).setAnswerIndex(answerPicked);
-
+    public void setScore(int score) {
+        this.score = score;
     }
 }
