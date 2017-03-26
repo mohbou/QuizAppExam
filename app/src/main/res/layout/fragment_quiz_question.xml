@@ -24,59 +24,19 @@
         android:text="@string/statement"/>
 
     <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+                  android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/checkBox"
+        <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Compiler error on line 1."/>
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view_answers">
 
-        <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Compiler error on line 2."/>
+        </android.support.v7.widget.RecyclerView>
 
-        <CheckBox
-            android:id="@+id/checkBox3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Compiler error on line 3."/>
-
-        <CheckBox
-            android:id="@+id/checkBox4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Compiler error on line 4."/>
-
-        <CheckBox
-            android:id="@+id/checkBox5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Compiler error on line 5."/>
-
-        <CheckBox
-            android:id="@+id/checkBox6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Compiler error on line 6."/>
-
-        <CheckBox
-            android:id="@+id/checkBox7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0null"/>
-
-        <CheckBox
-            android:id="@+id/checkBox8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="nullnull"/>
-        </LinearLayout>
+    </LinearLayout>
     <LinearLayout android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-        android:orientation="horizontal">
+                  android:orientation="horizontal">
 
         <CheckBox
             android:id="@+id/checkBox_review"
@@ -94,4 +54,4 @@
     </LinearLayout>
 
 
-    </LinearLayout>
+</LinearLayout>
