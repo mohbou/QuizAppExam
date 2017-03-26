@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">QuizAppExam</string>
-    <string name="statement">1: public class _C { 2: private static int $; 3: public static void main(String[] main) { 4: String a_b; 5: System.out.print($); 6: System.out.print(a_b); 7: } }</string>
+    <string name="statement">1: public class _C { \n2: private static int $; \n3: public static void main(String[] main) { \n4: String a_b; \n5: System.out.print($); \n6: System.out.print(a_b); \n7: } }</string>
 </resources>
