@@ -2,16 +2,16 @@ package com.quizappexam.app.quizappexam.model.entity;
 
 public class Answer {
 
-    private int AnswerID;
+    private int answerID;
     private String answerString;
     private boolean answerValid;
 
     public int getAnswerID() {
-        return AnswerID;
+        return answerID;
     }
 
     public void setAnswerID(int answerID) {
-        AnswerID = answerID;
+        this.answerID = answerID;
     }
 
     public String getAnswerString() {
